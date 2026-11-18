@@ -27,13 +27,13 @@ class TodoController extends Controller
     {
         return view('welcome', [
             'todos' => Todo::latest()->get(),
-            'model' => Todo::find($id),
+            'model' => Todo::findOrFail($id),
         ]);
     }
 
     public function update(TodoRequest $request, $id)
     {
-        $todo = Todo::find($id);
+        $todo = Todo::findOrFail($id);
         $todo->update($request->validated());
 
         return back()->with('successMessage', 'Todo updated successfully.');
@@ -41,7 +41,7 @@ class TodoController extends Controller
 
     public function destroy(Request $request, $id)
     {
-        $todo = Todo::find($id);
+        $todo = Todo::findOrFail($id);
 
         $todo->delete();
 

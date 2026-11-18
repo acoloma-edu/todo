@@ -9,6 +9,6 @@
     }
 @endphp
 
-<button class="inline-block {{ $small ? 'px-2 py-1' : 'px-6 py-2.5' }} {{ $colorClasses }} text-white  text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out">
+<button class="inline-block cursor-pointer {{ $small ? 'px-2 py-1' : 'px-6 py-2.5' }} {{ $colorClasses }} text-white  text-xs leading-tight uppercase rounded-sm shadow-md hover:shadow-lg focus:shadow-lg focus:outline-hidden focus:ring-0  active:shadow-lg transition duration-150 ease-in-out">
     {{ $slot }}
 </button>

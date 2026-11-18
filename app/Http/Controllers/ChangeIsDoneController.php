@@ -9,7 +9,7 @@ class ChangeIsDoneController extends Controller
 {
     public function __invoke(Request $request, $id)
     {
-        $todo = Todo::find($id);
+        $todo = Todo::findOrFail($id);
         $todo->is_done = $todo->is_done ? false : true;
         $todo->save();
 
