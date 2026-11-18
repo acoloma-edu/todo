@@ -1,6 +1,13 @@
 # Aplicación To-Do con Laravel 13
 
-Aplicación sencilla de lista de tareas hecha con Laravel 13. Requiere PHP 8.3 o superior.
+Aplicación sencilla de lista de tareas hecha con Laravel 13.
+
+## Requisitos
+
+- PHP 8.3 o superior, con las extensiones que necesita Laravel 13
+- Composer
+- MySQL o MariaDB
+- Servidor web nginx o Apache con PHP-FPM
 
 ## Despliegue rápido
 
